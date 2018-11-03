@@ -1,0 +1,22 @@
+PODS:
+  - KGNAutoLayout (1.5.5)
+
+DEPENDENCIES:
+  - KGNAutoLayout (from `https://github.com/kgn/KGNAutoLayout.git`, branch `swift4`)
+
+EXTERNAL SOURCES:
+  KGNAutoLayout:
+    :branch: swift4
+    :git: https://github.com/kgn/KGNAutoLayout.git
+
+CHECKOUT OPTIONS:
+  KGNAutoLayout:
+    :commit: 5835d5ec5960e9e4902342fb855227185eb45116
+    :git: https://github.com/kgn/KGNAutoLayout.git
+
+SPEC CHECKSUMS:
+  KGNAutoLayout: 79c5d40f1fa15f13fb5a5dd85446753ae8d70812
+
+PODFILE CHECKSUM: 57d21d6cf1f1d80f79cf79537e4532ce111ee703
+
+COCOAPODS: 1.4.0

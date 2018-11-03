@@ -1,0 +1,6 @@
+framework module Pods_pinspot {
+  umbrella header "Pods-pinspot-umbrella.h"
+
+  export *
+  module * { export * }
+}

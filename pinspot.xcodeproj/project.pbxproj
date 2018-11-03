@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704A9218E02BE00B8EBEE /* AppDelegate.swift */; };
-		337704AC218E02BE00B8EBEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704AB218E02BE00B8EBEE /* ViewController.swift */; };
-		337704AF218E02BE00B8EBEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337704AD218E02BE00B8EBEE /* Main.storyboard */; };
 		337704B1218E02C000B8EBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337704B0218E02C000B8EBEE /* Assets.xcassets */; };
 		337704B4218E02C000B8EBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */; };
+		337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704BD218E042D00B8EBEE /* AppFlowManager.swift */; };
+		337704C0218E050D00B8EBEE /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704BF218E050D00B8EBEE /* ExploreViewController.swift */; };
+		337704C2218E051900B8EBEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704C1218E051900B8EBEE /* ProfileViewController.swift */; };
+		337704C5218E05D100B8EBEE /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704C4218E05D100B8EBEE /* Style.swift */; };
+		337704C9218E07B800B8EBEE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704C8218E07B800B8EBEE /* View.swift */; };
+		337704CB218E07C900B8EBEE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704CA218E07C900B8EBEE /* MapView.swift */; };
+		337704CD218E09B800B8EBEE /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704CC218E09B800B8EBEE /* GridView.swift */; };
+		7A8F48BC666EB3558AF8586D /* Pods_pinspot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F03D0F62D993D5F409A5A97 /* Pods-pinspot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.release.xcconfig"; sourceTree = "<group>"; };
 		337704A6218E02BE00B8EBEE /* pinspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337704A9218E02BE00B8EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		337704AB218E02BE00B8EBEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		337704AE218E02BE00B8EBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		337704B0218E02C000B8EBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337704B3218E02C000B8EBEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337704B5218E02C000B8EBEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337704BD218E042D00B8EBEE /* AppFlowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppFlowManager.swift; path = pinspot/Managers/AppFlowManager.swift; sourceTree = SOURCE_ROOT; };
+		337704BF218E050D00B8EBEE /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		337704C1218E051900B8EBEE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		337704C4218E05D100B8EBEE /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		337704C8218E07B800B8EBEE /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		337704CA218E07C900B8EBEE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		337704CC218E09B800B8EBEE /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		41F8905EC6C79924DB36FA1B /* Pods-pinspot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.debug.xcconfig"; sourceTree = "<group>"; };
+		99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinspot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8F48BC666EB3558AF8586D /* Pods_pinspot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				337704A8218E02BE00B8EBEE /* pinspot */,
 				337704A7218E02BE00B8EBEE /* Products */,
+				D39A658208251457F74F04EE /* Pods */,
+				593DEF37183462804B69977E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,76 @@
 		337704A8218E02BE00B8EBEE /* pinspot */ = {
 			isa = PBXGroup;
 			children = (
+				337704BC218E041000B8EBEE /* Managers */,
+				337704BB218E03FB00B8EBEE /* View Controllers */,
+				337704C3218E05C800B8EBEE /* UI */,
 				337704A9218E02BE00B8EBEE /* AppDelegate.swift */,
-				337704AB218E02BE00B8EBEE /* ViewController.swift */,
-				337704AD218E02BE00B8EBEE /* Main.storyboard */,
 				337704B0218E02C000B8EBEE /* Assets.xcassets */,
 				337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */,
 				337704B5218E02C000B8EBEE /* Info.plist */,
 			);
 			path = pinspot;
+			sourceTree = "<group>";
+		};
+		337704BB218E03FB00B8EBEE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				337704BF218E050D00B8EBEE /* ExploreViewController.swift */,
+				337704C1218E051900B8EBEE /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		337704BC218E041000B8EBEE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				337704BD218E042D00B8EBEE /* AppFlowManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		337704C3218E05C800B8EBEE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				337704C6218E07A800B8EBEE /* Views */,
+				337704C4218E05D100B8EBEE /* Style.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		337704C6218E07A800B8EBEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				337704C7218E07AE00B8EBEE /* Base */,
+				337704CA218E07C900B8EBEE /* MapView.swift */,
+				337704CC218E09B800B8EBEE /* GridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		337704C7218E07AE00B8EBEE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				337704C8218E07B800B8EBEE /* View.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		593DEF37183462804B69977E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D39A658208251457F74F04EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41F8905EC6C79924DB36FA1B /* Pods-pinspot.debug.xcconfig */,
+				0F03D0F62D993D5F409A5A97 /* Pods-pinspot.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337704B8218E02C000B8EBEE /* Build configuration list for PBXNativeTarget "pinspot" */;
 			buildPhases = (
+				76C547AFE5C7275A89BA0519 /* [CP] Check Pods Manifest.lock */,
 				337704A2218E02BD00B8EBEE /* Sources */,
 				337704A3218E02BD00B8EBEE /* Frameworks */,
 				337704A4218E02BD00B8EBEE /* Resources */,
+				60F6A1590190DCE1E3A03FE4 /* [CP] Embed Pods Frameworks */,
+				0629D93CCF9DB251FC3CE475 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,33 +206,81 @@
 			files = (
 				337704B4218E02C000B8EBEE /* LaunchScreen.storyboard in Resources */,
 				337704B1218E02C000B8EBEE /* Assets.xcassets in Resources */,
-				337704AF218E02BE00B8EBEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0629D93CCF9DB251FC3CE475 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinspot/Pods-pinspot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60F6A1590190DCE1E3A03FE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pinspot/Pods-pinspot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C547AFE5C7275A89BA0519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinspot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		337704A2218E02BD00B8EBEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337704AC218E02BE00B8EBEE /* ViewController.swift in Sources */,
+				337704CB218E07C900B8EBEE /* MapView.swift in Sources */,
 				337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */,
+				337704CD218E09B800B8EBEE /* GridView.swift in Sources */,
+				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
+				337704C9218E07B800B8EBEE /* View.swift in Sources */,
+				337704C2218E051900B8EBEE /* ProfileViewController.swift in Sources */,
+				337704C0218E050D00B8EBEE /* ExploreViewController.swift in Sources */,
+				337704C5218E05D100B8EBEE /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		337704AD218E02BE00B8EBEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				337704AE218E02BE00B8EBEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +410,7 @@
 		};
 		337704B9218E02C000B8EBEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F8905EC6C79924DB36FA1B /* Pods-pinspot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +429,7 @@
 		};
 		337704BA218E02C000B8EBEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F03D0F62D993D5F409A5A97 /* Pods-pinspot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
