@@ -16,6 +16,7 @@ class ExploreViewController: UIViewController {
 
     var segmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: ["Map", "List"])
+        segmentedControl.backgroundColor = Style.Color.white
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.addTarget(self, action: #selector(didChangeValue(_:)), for: .valueChanged)
         return segmentedControl
@@ -26,11 +27,12 @@ class ExploreViewController: UIViewController {
 
         self.view.backgroundColor = Style.Color.white
 
-        self.view.addSubview(self.mapView)
-        self.mapView.pinToEdgesOfSuperview()
-
         self.view.addSubview(self.gridView)
         self.gridView.pinToEdgesOfSuperview()
+        self.gridView.delegate = self
+
+        self.view.addSubview(self.mapView)
+        self.mapView.pinToEdgesOfSuperview()
 
         self.view.addSubview(self.segmentedControl)
         self.segmentedControl.pinToBottomEdgeOfSuperview(withOffset: Style.Size.padding)
@@ -46,5 +48,10 @@ class ExploreViewController: UIViewController {
             self.gridView.isHidden = false
         }
     }
+}
 
+extension ExploreViewController: PostListingProtocol {
+    func didTapOn() {
+        self.navigationController?.pushViewController(PostViewController(), animated: true)
+    }
 }

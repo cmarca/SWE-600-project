@@ -33,6 +33,8 @@ class AppFlowController: NSObject {
 
         self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
+
+        self.tabBarController?.present(LoginViewController(), animated: true, completion: nil)
     }
 
     // Factories

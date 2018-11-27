@@ -17,6 +17,11 @@
 		337704C9218E07B800B8EBEE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704C8218E07B800B8EBEE /* View.swift */; };
 		337704CB218E07C900B8EBEE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704CA218E07C900B8EBEE /* MapView.swift */; };
 		337704CD218E09B800B8EBEE /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704CC218E09B800B8EBEE /* GridView.swift */; };
+		337704CF218E0C4D00B8EBEE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704CE218E0C4D00B8EBEE /* CollectionViewCell.swift */; };
+		337704D1218E0EC300B8EBEE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D0218E0EC300B8EBEE /* PostViewController.swift */; };
+		337704D4218E106800B8EBEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D3218E106800B8EBEE /* LoginViewController.swift */; };
+		337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D5218E107300B8EBEE /* SignUpViewController.swift */; };
+		337704D9218E124E00B8EBEE /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D8218E124E00B8EBEE /* UIView+AutoLayout.swift */; };
 		7A8F48BC666EB3558AF8586D /* Pods_pinspot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +39,11 @@
 		337704C8218E07B800B8EBEE /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		337704CA218E07C900B8EBEE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		337704CC218E09B800B8EBEE /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		337704CE218E0C4D00B8EBEE /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		337704D0218E0EC300B8EBEE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		337704D3218E106800B8EBEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		337704D5218E107300B8EBEE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		337704D8218E124E00B8EBEE /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		41F8905EC6C79924DB36FA1B /* Pods-pinspot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.debug.xcconfig"; sourceTree = "<group>"; };
 		99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinspot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +81,7 @@
 		337704A8218E02BE00B8EBEE /* pinspot */ = {
 			isa = PBXGroup;
 			children = (
+				337704D7218E123C00B8EBEE /* Extensions */,
 				337704BC218E041000B8EBEE /* Managers */,
 				337704BB218E03FB00B8EBEE /* View Controllers */,
 				337704C3218E05C800B8EBEE /* UI */,
@@ -85,8 +96,10 @@
 		337704BB218E03FB00B8EBEE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				337704D2218E105900B8EBEE /* Authentication */,
 				337704BF218E050D00B8EBEE /* ExploreViewController.swift */,
 				337704C1218E051900B8EBEE /* ProfileViewController.swift */,
+				337704D0218E0EC300B8EBEE /* PostViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -121,9 +134,27 @@
 		337704C7218E07AE00B8EBEE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				337704CE218E0C4D00B8EBEE /* CollectionViewCell.swift */,
 				337704C8218E07B800B8EBEE /* View.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		337704D2218E105900B8EBEE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				337704D3218E106800B8EBEE /* LoginViewController.swift */,
+				337704D5218E107300B8EBEE /* SignUpViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		337704D7218E123C00B8EBEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				337704D8218E124E00B8EBEE /* UIView+AutoLayout.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		593DEF37183462804B69977E /* Frameworks */ = {
@@ -269,12 +300,17 @@
 			files = (
 				337704CB218E07C900B8EBEE /* MapView.swift in Sources */,
 				337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */,
+				337704CF218E0C4D00B8EBEE /* CollectionViewCell.swift in Sources */,
 				337704CD218E09B800B8EBEE /* GridView.swift in Sources */,
+				337704D1218E0EC300B8EBEE /* PostViewController.swift in Sources */,
 				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
+				337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */,
+				337704D9218E124E00B8EBEE /* UIView+AutoLayout.swift in Sources */,
 				337704C9218E07B800B8EBEE /* View.swift in Sources */,
 				337704C2218E051900B8EBEE /* ProfileViewController.swift in Sources */,
 				337704C0218E050D00B8EBEE /* ExploreViewController.swift in Sources */,
 				337704C5218E05D100B8EBEE /* Style.swift in Sources */,
+				337704D4218E106800B8EBEE /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
