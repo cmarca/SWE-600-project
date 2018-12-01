@@ -22,7 +22,7 @@ class AppFlowController: NSObject {
         self.appDelegate?.window = self.window
 
         let (exploreNavigationController, _) = self.create(viewController: ExploreViewController(), title: "Explore", image: nil)
-        let (cameraNavigationController, _) = self.create(viewController: UIViewController(), title: "Camera", image: nil)
+        let (cameraNavigationController, _) = self.create(viewController: CameraPlaceholderViewController(), title: "Camera", image: nil)
         let (profileNavigationController, _) = self.create(viewController: UIViewController(), title: "Profile", image: nil)
         let tabBarController = self.createTabBarController(controllers: [
             exploreNavigationController,
@@ -30,6 +30,7 @@ class AppFlowController: NSObject {
             profileNavigationController,
             ])
         self.tabBarController = tabBarController
+        self.tabBarController?.delegate = self
 
         self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
@@ -57,4 +58,14 @@ class AppFlowController: NSObject {
     }
 
     // Navigation
+}
+
+extension AppFlowController: UITabBarControllerDelegate {
+
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if let navigationController = viewController as? UINavigationController,
+            let _ = navigationController.viewControllers.first as? CameraPlaceholderViewController {
+
+        }
+    }
 }
