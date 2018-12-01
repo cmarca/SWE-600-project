@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		333407BA21B07C10007663B7 /* CameraPlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407B921B07C0F007663B7 /* CameraPlaceholderViewController.swift */; };
 		333407BC21B2CB4C007663B7 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407BB21B2CB4C007663B7 /* InputFieldView.swift */; };
+		333407BE21B2EEBA007663B7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407BD21B2EEBA007663B7 /* Post.swift */; };
+		333407C121B2EF29007663B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407C021B2EF29007663B7 /* User.swift */; };
+		333407C321B2EF5A007663B7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407C221B2EF5A007663B7 /* Comment.swift */; };
+		333407C521B2EF79007663B7 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407C421B2EF79007663B7 /* Place.swift */; };
+		333407C821B2F018007663B7 /* PostFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407C721B2F018007663B7 /* PostFactory.swift */; };
+		333407CB21B2F0C3007663B7 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407CA21B2F0C3007663B7 /* Lorem.swift */; };
+		333407CD21B2FECF007663B7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407CC21B2FECF007663B7 /* DataManager.swift */; };
 		337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704A9218E02BE00B8EBEE /* AppDelegate.swift */; };
 		337704B1218E02C000B8EBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337704B0218E02C000B8EBEE /* Assets.xcassets */; };
 		337704B4218E02C000B8EBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */; };
@@ -31,6 +38,13 @@
 		0F03D0F62D993D5F409A5A97 /* Pods-pinspot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.release.xcconfig"; sourceTree = "<group>"; };
 		333407B921B07C0F007663B7 /* CameraPlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPlaceholderViewController.swift; sourceTree = "<group>"; };
 		333407BB21B2CB4C007663B7 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		333407BD21B2EEBA007663B7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		333407C021B2EF29007663B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		333407C221B2EF5A007663B7 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		333407C421B2EF79007663B7 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		333407C721B2F018007663B7 /* PostFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFactory.swift; sourceTree = "<group>"; };
+		333407CA21B2F0C3007663B7 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		333407CC21B2FECF007663B7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		337704A6218E02BE00B8EBEE /* pinspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337704A9218E02BE00B8EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337704B0218E02C000B8EBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +78,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333407BF21B2EEBE007663B7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				333407C621B2F008007663B7 /* Factory */,
+				333407BD21B2EEBA007663B7 /* Post.swift */,
+				333407C021B2EF29007663B7 /* User.swift */,
+				333407C221B2EF5A007663B7 /* Comment.swift */,
+				333407C421B2EF79007663B7 /* Place.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		333407C621B2F008007663B7 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				333407C721B2F018007663B7 /* PostFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		333407C921B2F0B2007663B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				333407CA21B2F0C3007663B7 /* Lorem.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		3377049D218E02BD00B8EBEE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +127,8 @@
 		337704A8218E02BE00B8EBEE /* pinspot */ = {
 			isa = PBXGroup;
 			children = (
+				333407C921B2F0B2007663B7 /* Utils */,
+				333407BF21B2EEBE007663B7 /* Objects */,
 				337704D7218E123C00B8EBEE /* Extensions */,
 				337704BC218E041000B8EBEE /* Managers */,
 				337704BB218E03FB00B8EBEE /* View Controllers */,
@@ -113,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				337704BD218E042D00B8EBEE /* AppFlowManager.swift */,
+				333407CC21B2FECF007663B7 /* DataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -305,18 +350,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				337704CB218E07C900B8EBEE /* MapView.swift in Sources */,
+				333407C521B2EF79007663B7 /* Place.swift in Sources */,
+				333407C821B2F018007663B7 /* PostFactory.swift in Sources */,
 				337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */,
+				333407CB21B2F0C3007663B7 /* Lorem.swift in Sources */,
 				337704CF218E0C4D00B8EBEE /* CollectionViewCell.swift in Sources */,
 				337704CD218E09B800B8EBEE /* GridView.swift in Sources */,
 				337704D1218E0EC300B8EBEE /* PostViewController.swift in Sources */,
 				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
 				337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */,
+				333407C321B2EF5A007663B7 /* Comment.swift in Sources */,
+				333407C121B2EF29007663B7 /* User.swift in Sources */,
 				333407BA21B07C10007663B7 /* CameraPlaceholderViewController.swift in Sources */,
 				333407BC21B2CB4C007663B7 /* InputFieldView.swift in Sources */,
 				337704D9218E124E00B8EBEE /* UIView+AutoLayout.swift in Sources */,
 				337704C9218E07B800B8EBEE /* View.swift in Sources */,
+				333407BE21B2EEBA007663B7 /* Post.swift in Sources */,
 				337704C2218E051900B8EBEE /* ProfileViewController.swift in Sources */,
 				337704C0218E050D00B8EBEE /* ExploreViewController.swift in Sources */,
+				333407CD21B2FECF007663B7 /* DataManager.swift in Sources */,
 				337704C5218E05D100B8EBEE /* Style.swift in Sources */,
 				337704D4218E106800B8EBEE /* LoginViewController.swift in Sources */,
 			);

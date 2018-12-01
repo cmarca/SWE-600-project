@@ -11,6 +11,12 @@ import KGNAutoLayout
 
 class ExploreViewController: UIViewController {
 
+    var posts: [Post]? {
+        didSet {
+            self.gridView.posts = self.posts
+        }
+    }
+
     var mapView = MapView()
     var gridView = GridView()
 
@@ -37,6 +43,8 @@ class ExploreViewController: UIViewController {
         self.view.addSubview(self.segmentedControl)
         self.segmentedControl.pinToBottomEdgeOfSuperview(withOffset: Style.Size.padding)
         self.segmentedControl.pinToSideEdgesOfSuperview(withOffset: Style.Size.padding)
+
+        self.posts = DataManager.shared.posts
     }
 
     @objc func didChangeValue(_ segmentedControl: UISegmentedControl) {

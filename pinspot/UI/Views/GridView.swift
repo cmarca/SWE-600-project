@@ -10,9 +10,16 @@ import UIKit
 
 class GridView: View {
 
+    var posts: [Post]? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+
     var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
+        flowLayout.itemSize = CGSize(width: Style.Size.control, height: Style.Size.control)
         flowLayout.estimatedItemSize = CGSize(width: Style.Size.control, height: Style.Size.control)
         flowLayout.minimumInteritemSpacing = Style.Size.smallPadding
         flowLayout.minimumLineSpacing = Style.Size.smallPadding
@@ -43,13 +50,14 @@ extension GridView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Int.random(in: 3...40)
+        return self.posts?.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridViewCell.reuseIdentifier(), for: indexPath) as? GridViewCell else {
             fatalError()
         }
+        cell.post = self.posts?[indexPath.row]
         return cell
     }
 
@@ -60,7 +68,24 @@ extension GridView: UICollectionViewDelegate, UICollectionViewDataSource {
 
 class GridViewCell: CollectionViewCell {
 
+    var post: Post? {
+        didSet {
+            self.imageView.image = self.post?.picture
+        }
+    }
+
+    let imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+
     override func setup() {
         self.backgroundColor = Style.Color.random(alpha: 0.2)
+        self.addSubview(self.imageView)
+        self.imageView.pinToEdgesOfSuperview()
+
+        self.imageView.size(toWidth: Style.Size.control * 2.0)
+        self.imageView.size(toHeight: Style.Size.control * 2.0)
     }
 }
