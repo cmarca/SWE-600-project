@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		333407BA21B07C10007663B7 /* CameraPlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407B921B07C0F007663B7 /* CameraPlaceholderViewController.swift */; };
+		333407BC21B2CB4C007663B7 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407BB21B2CB4C007663B7 /* InputFieldView.swift */; };
 		337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704A9218E02BE00B8EBEE /* AppDelegate.swift */; };
 		337704B1218E02C000B8EBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337704B0218E02C000B8EBEE /* Assets.xcassets */; };
 		337704B4218E02C000B8EBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0F03D0F62D993D5F409A5A97 /* Pods-pinspot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.release.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.release.xcconfig"; sourceTree = "<group>"; };
 		333407B921B07C0F007663B7 /* CameraPlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPlaceholderViewController.swift; sourceTree = "<group>"; };
+		333407BB21B2CB4C007663B7 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
 		337704A6218E02BE00B8EBEE /* pinspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337704A9218E02BE00B8EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337704B0218E02C000B8EBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				337704C7218E07AE00B8EBEE /* Base */,
 				337704CA218E07C900B8EBEE /* MapView.swift */,
 				337704CC218E09B800B8EBEE /* GridView.swift */,
+				333407BB21B2CB4C007663B7 /* InputFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
 				337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */,
 				333407BA21B07C10007663B7 /* CameraPlaceholderViewController.swift in Sources */,
+				333407BC21B2CB4C007663B7 /* InputFieldView.swift in Sources */,
 				337704D9218E124E00B8EBEE /* UIView+AutoLayout.swift in Sources */,
 				337704C9218E07B800B8EBEE /* View.swift in Sources */,
 				337704C2218E051900B8EBEE /* ProfileViewController.swift in Sources */,
