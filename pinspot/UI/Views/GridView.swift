@@ -62,8 +62,14 @@ extension GridView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.didTapOn()
+        if let post = self.posts?[indexPath.row] {
+            self.delegate?.didTapOn(post: post)
+        }
     }
+}
+
+protocol PostListingProtocol {
+    func didTapOn(post: Post)
 }
 
 class GridViewCell: CollectionViewCell {

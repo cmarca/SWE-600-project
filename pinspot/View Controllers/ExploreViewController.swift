@@ -59,7 +59,9 @@ class ExploreViewController: UIViewController {
 }
 
 extension ExploreViewController: PostListingProtocol {
-    func didTapOn() {
-        self.navigationController?.pushViewController(PostViewController(), animated: true)
+    func didTapOn(post: Post) {
+        let detailViewController = DetailViewController()
+        detailViewController.post = post
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

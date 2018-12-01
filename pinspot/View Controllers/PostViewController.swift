@@ -8,9 +8,6 @@
 
 import UIKit
 
-protocol PostListingProtocol {
-    func didTapOn()
-}
 
 class PostViewController: UIViewController {
 

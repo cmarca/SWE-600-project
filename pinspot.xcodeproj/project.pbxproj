@@ -16,6 +16,8 @@
 		333407C821B2F018007663B7 /* PostFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407C721B2F018007663B7 /* PostFactory.swift */; };
 		333407CB21B2F0C3007663B7 /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407CA21B2F0C3007663B7 /* Lorem.swift */; };
 		333407CD21B2FECF007663B7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407CC21B2FECF007663B7 /* DataManager.swift */; };
+		333407CF21B307F3007663B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407CE21B307F3007663B7 /* DetailViewController.swift */; };
+		333407D121B3080B007663B7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333407D021B3080B007663B7 /* PostView.swift */; };
 		337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704A9218E02BE00B8EBEE /* AppDelegate.swift */; };
 		337704B1218E02C000B8EBEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337704B0218E02C000B8EBEE /* Assets.xcassets */; };
 		337704B4218E02C000B8EBEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337704B2218E02C000B8EBEE /* LaunchScreen.storyboard */; };
@@ -45,6 +47,8 @@
 		333407C721B2F018007663B7 /* PostFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFactory.swift; sourceTree = "<group>"; };
 		333407CA21B2F0C3007663B7 /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 		333407CC21B2FECF007663B7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		333407CE21B307F3007663B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		333407D021B3080B007663B7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		337704A6218E02BE00B8EBEE /* pinspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337704A9218E02BE00B8EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337704B0218E02C000B8EBEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				337704C1218E051900B8EBEE /* ProfileViewController.swift */,
 				337704D0218E0EC300B8EBEE /* PostViewController.swift */,
 				333407B921B07C0F007663B7 /* CameraPlaceholderViewController.swift */,
+				333407CE21B307F3007663B7 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				337704CA218E07C900B8EBEE /* MapView.swift */,
 				337704CC218E09B800B8EBEE /* GridView.swift */,
 				333407BB21B2CB4C007663B7 /* InputFieldView.swift */,
+				333407D021B3080B007663B7 /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			files = (
 				337704CB218E07C900B8EBEE /* MapView.swift in Sources */,
 				333407C521B2EF79007663B7 /* Place.swift in Sources */,
+				333407CF21B307F3007663B7 /* DetailViewController.swift in Sources */,
 				333407C821B2F018007663B7 /* PostFactory.swift in Sources */,
 				337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */,
 				333407CB21B2F0C3007663B7 /* Lorem.swift in Sources */,
@@ -358,6 +365,7 @@
 				337704CD218E09B800B8EBEE /* GridView.swift in Sources */,
 				337704D1218E0EC300B8EBEE /* PostViewController.swift in Sources */,
 				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
+				333407D121B3080B007663B7 /* PostView.swift in Sources */,
 				337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */,
 				333407C321B2EF5A007663B7 /* Comment.swift in Sources */,
 				333407C121B2EF29007663B7 /* User.swift in Sources */,
