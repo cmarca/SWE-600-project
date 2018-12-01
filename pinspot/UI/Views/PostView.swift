@@ -37,7 +37,7 @@ class PostView: View {
 
         self.addSubview(self.caption)
         self.caption.positionBelow(self.picture, withOffset: Style.Size.padding)
-        self.caption.pinToSideEdgesOfSuperview()
+        self.caption.pinToSideEdgesOfSuperview(withOffset: Style.Size.padding)
         self.caption.pinToBottomEdgeOfSuperview()
     }
 }

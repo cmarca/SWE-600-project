@@ -44,7 +44,13 @@ class PostFactory: NSObject {
     }
 
     static func randomImage() -> UIImage {
-        return #imageLiteral(resourceName: "Pinspot")
+        let randomInt = Int.random(in: 1...3)
+        let randomString = String(format: "%03d", randomInt)
+        guard let image = UIImage(named: "\(randomString)") else {
+            return #imageLiteral(resourceName: "Pinspot")
+        }
+        return image
+//        return #imageLiteral(resourceName: "Pinspot")
     }
 
     static func randomCaption() -> String {
