@@ -19,9 +19,9 @@ class PostFactory: NSObject {
         return posts
     }
 
-    static func randomPost() -> Post {
+    static func randomPost(image: UIImage) -> Post {
         let post = Post()
-        post.picture = PostFactory.randomImage()
+        post.picture = image
         post.thumbnail = PostFactory.thumbnail(image: post.picture)
         post.caption = PostFactory.randomCaption()
         post.owner = PostFactory.randomUser()
@@ -31,6 +31,10 @@ class PostFactory: NSObject {
         post.isPublic = true
         post.likes = PostFactory.randomUsers(2)
         return post
+    }
+
+    static func randomPost() -> Post {
+        return PostFactory.randomPost(image: PostFactory.randomImage())
     }
 
     // MARK :- singles
