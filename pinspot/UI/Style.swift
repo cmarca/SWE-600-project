@@ -11,6 +11,8 @@ import UIKit
 public struct Style {
 
     public struct Color {
+
+        public static let pinspot = UIColor(red: 76.0/255.0, green:115.0/255.0, blue:190.0/255.0, alpha:1.0)
         public static let white = UIColor.white
         public static let black = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         public static let dimBlack = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.6)

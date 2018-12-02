@@ -23,10 +23,14 @@ class LoginViewController: UIViewController {
     }()
 
     let loginButton: UIButton = {
-        let loginButton = UIButton(type: UIButton.ButtonType.system)
+        let loginButton = Button.solidButton()
         loginButton.setTitle("Login", for: .normal)
         loginButton.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
         return loginButton
+//        let loginButton = UIButton(type: UIButton.ButtonType.system)
+//        loginButton.setTitle("Login", for: .normal)
+//        loginButton.addTarget(self, action: #selector(didTapButton(_:)), for: .touchUpInside)
+//        return loginButton
     }()
 
     let signUpButton: UIButton = {
@@ -111,6 +115,7 @@ class LoginViewController: UIViewController {
         self.contentView.addSubview(self.loginButton)
         self.loginButton.pinToBottomEdgeOfSafeArea(withOffset: Style.Size.padding)
         self.loginButton.pinToSideEdgesOfSuperview(withOffset: Style.Size.padding)
+        self.loginButton.size(toHeight: Style.Size.control)
 
         self.contentView.addSubview(self.signUpButton)
         self.signUpButton.pinToTopEdgeOfSafeArea(withOffset: Style.Size.padding)
