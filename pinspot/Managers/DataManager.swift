@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 class DataManager: NSObject {
 
     static let shared = DataManager()
 
-    var posts: [Post]?
+    var posts: Variable<[Post]?> = Variable(nil)
 
     override init() {
         super.init()
@@ -20,6 +21,6 @@ class DataManager: NSObject {
     }
 
     func setupPosts() {
-        self.posts = PostFactory.randomPosts()
+        self.posts.value = PostFactory.randomPosts()
     }
 }

@@ -49,7 +49,8 @@ extension CameraPlaceholderViewController: UIImagePickerControllerDelegate, UINa
         self.imagePickerViewController.dismiss(animated: true, completion: nil)
 
         if let image = info[.originalImage] as? UIImage {
-            let post = PostFactory.randomPost(image: image)
+            let post = PostFactory.randomPost(image: image, fixedLocation: true)
+            DataManager.shared.posts.value?.append(post)
         }
 
     }

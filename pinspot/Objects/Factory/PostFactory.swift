@@ -19,7 +19,7 @@ class PostFactory: NSObject {
         return posts
     }
 
-    static func randomPost(image: UIImage) -> Post {
+    static func randomPost(image: UIImage, fixedLocation: Bool = false) -> Post {
         let post = Post()
         post.picture = image
         post.thumbnail = PostFactory.thumbnail(image: post.picture)
@@ -27,7 +27,7 @@ class PostFactory: NSObject {
         post.owner = PostFactory.randomUser()
         post.comments = PostFactory.randomComments(4)
         post.date = Date()
-        post.place = PostFactory.randomPlace()
+        post.place = PostFactory.randomPlace(fixedLocation: fixedLocation)
         post.isPublic = true
         post.likes = PostFactory.randomUsers(2)
         return post
@@ -38,22 +38,22 @@ class PostFactory: NSObject {
     }
 
     // MARK :- singles
-    static func randomLocation() -> CLLocationCoordinate2D {
+    static func randomLocation(fixedLocation: Bool = false) -> CLLocationCoordinate2D {
         let latitudeOffset = Double.random(in: -0.1...0.1)
-        let latitudeDouble = 37.3885491 + latitudeOffset
+        let latitudeDouble = 37.3885491 + (fixedLocation ? 0.0 : latitudeOffset)
 
         let longitudeOffset = Double.random(in: -0.1...0.1)
-        let longitudeDouble = -121.9323874 + longitudeOffset
+        let longitudeDouble = -121.9323874 + (fixedLocation ? 0.0 : longitudeOffset)
 
         let latitude = CLLocationDegrees(exactly: latitudeDouble) ?? CLLocationDegrees()
         let longitude = CLLocationDegrees(exactly: longitudeDouble) ?? CLLocationDegrees()
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 
-    static func randomPlace() -> Place {
+    static func randomPlace(fixedLocation: Bool = false) -> Place {
          let place = Place()
         place.name = Lorem.word
-        place.location = PostFactory.randomLocation()
+        place.location = PostFactory.randomLocation(fixedLocation: fixedLocation)
         return place
     }
 

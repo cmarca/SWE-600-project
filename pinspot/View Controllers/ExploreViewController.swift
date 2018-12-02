@@ -8,6 +8,7 @@
 
 import UIKit
 import KGNAutoLayout
+import RxSwift
 
 class ExploreViewController: UIViewController {
 
@@ -20,6 +21,8 @@ class ExploreViewController: UIViewController {
 
     var mapView = MapView()
     var gridView = GridView()
+
+    let disposeBag = DisposeBag()
 
     var segmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: ["Map", "List"])
@@ -46,7 +49,14 @@ class ExploreViewController: UIViewController {
         self.segmentedControl.pinToBottomEdgeOfSuperview(withOffset: Style.Size.padding)
         self.segmentedControl.pinToSideEdgesOfSuperview(withOffset: Style.Size.padding)
 
-        self.posts = DataManager.shared.posts
+//        self.posts = DataManager.shared.posts.value
+        self.setupReactiveUI()
+    }
+
+    private func setupReactiveUI() {
+        DataManager.shared.posts.asObservable().subscribe(onNext: { [weak self] (posts) in
+            self?.posts = posts
+        }).disposed(by: self.disposeBag)
     }
 
     @objc func didChangeValue(_ segmentedControl: UISegmentedControl) {

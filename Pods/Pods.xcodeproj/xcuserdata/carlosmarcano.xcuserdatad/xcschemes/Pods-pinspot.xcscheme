@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C3D2A19212D880A2CEB65B3F6FB1DFF"
+               BlueprintIdentifier = "FCE9684DB91837948A87E15D20CC5A3C"
                BuildableName = "Pods_pinspot.framework"
                BlueprintName = "Pods-pinspot"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C3D2A19212D880A2CEB65B3F6FB1DFF"
+            BlueprintIdentifier = "FCE9684DB91837948A87E15D20CC5A3C"
             BuildableName = "Pods_pinspot.framework"
             BlueprintName = "Pods-pinspot"
             ReferencedContainer = "container:Pods.xcodeproj">
