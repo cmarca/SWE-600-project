@@ -65,9 +65,10 @@ class PostFactory: NSObject {
     static func randomCaption() -> String {
         return Lorem.sentences(3)
     }
-
+    
     static func randomUser() -> User {
         let user = User()
+        user.profilePicture = #imageLiteral(resourceName: "blank-profile-picture")
         user.realName = Lorem.fullName
         user.userName = Lorem.lastName
         return user

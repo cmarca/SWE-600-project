@@ -21,9 +21,9 @@ class AppFlowController: NSObject {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.appDelegate?.window = self.window
 
-        let (exploreNavigationController, _) = self.create(viewController: ExploreViewController(), title: "Explore", image: nil)
-        let (cameraNavigationController, _) = self.create(viewController: CameraPlaceholderViewController(), title: "Camera", image: nil)
-        let (profileNavigationController, _) = self.create(viewController: UIViewController(), title: "Profile", image: nil)
+        let (exploreNavigationController, _) = self.create(viewController: ExploreViewController(), title: "Explore", image: #imageLiteral(resourceName: "home"))
+        let (cameraNavigationController, _) = self.create(viewController: CameraPlaceholderViewController(), title: "Camera", image: #imageLiteral(resourceName: "camera"))
+        let (profileNavigationController, _) = self.create(viewController: UIViewController(), title: "Profile", image: #imageLiteral(resourceName: "profile"))
         let tabBarController = self.createTabBarController(controllers: [
             exploreNavigationController,
             cameraNavigationController,

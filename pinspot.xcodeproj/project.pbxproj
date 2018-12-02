@@ -35,6 +35,7 @@
 		337704D6218E107300B8EBEE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D5218E107300B8EBEE /* SignUpViewController.swift */; };
 		337704D9218E124E00B8EBEE /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337704D8218E124E00B8EBEE /* UIView+AutoLayout.swift */; };
 		33D177A921B39AEE00E6629A /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D177A821B39AEE00E6629A /* AnnotationView.swift */; };
+		33D177AB21B4116C00E6629A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D177AA21B4116C00E6629A /* AvatarView.swift */; };
 		7A8F48BC666EB3558AF8586D /* Pods_pinspot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		337704D5218E107300B8EBEE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		337704D8218E124E00B8EBEE /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		33D177A821B39AEE00E6629A /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		33D177AA21B4116C00E6629A /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		41F8905EC6C79924DB36FA1B /* Pods-pinspot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinspot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pinspot/Pods-pinspot.debug.xcconfig"; sourceTree = "<group>"; };
 		99CBFE56EB06795EA39D7912 /* Pods_pinspot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinspot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				333407BB21B2CB4C007663B7 /* InputFieldView.swift */,
 				333407D021B3080B007663B7 /* PostView.swift */,
 				33D177A821B39AEE00E6629A /* AnnotationView.swift */,
+				33D177AA21B4116C00E6629A /* AvatarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				337704AA218E02BE00B8EBEE /* AppDelegate.swift in Sources */,
 				333407CB21B2F0C3007663B7 /* Lorem.swift in Sources */,
 				337704CF218E0C4D00B8EBEE /* CollectionViewCell.swift in Sources */,
+				33D177AB21B4116C00E6629A /* AvatarView.swift in Sources */,
 				337704CD218E09B800B8EBEE /* GridView.swift in Sources */,
 				337704D1218E0EC300B8EBEE /* PostViewController.swift in Sources */,
 				337704BE218E042D00B8EBEE /* AppFlowManager.swift in Sources */,
