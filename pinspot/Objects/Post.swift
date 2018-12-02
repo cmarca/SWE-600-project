@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MapKit
 
-class Post: NSObject {
+class Post: NSObject, MKAnnotation {
     var picture: UIImage?
+    var thumbnail: UIImage?
     var caption: String?
     var owner: User?
     var comments: [Comment]?
@@ -17,4 +19,22 @@ class Post: NSObject {
     var place: Place?
     var isPublic: Bool?
     var likes: [User]?
+
+//    var title: String? {
+//        get {
+//            return self.owner?.userName
+//        }
+//    }
+//
+//    var subtitle: String? {
+//        get {
+//            return self.caption
+//        }
+//    }
+
+    var coordinate: CLLocationCoordinate2D {
+        get {
+            return self.place?.location ?? CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
+        }
+    }
 }

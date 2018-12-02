@@ -11,6 +11,6 @@ import CoreLocation
 
 class Place: NSObject {
     var name: String?
-    var location: CLLocation?
+    var location: CLLocationCoordinate2D?
     var posts: [Post]?
 }

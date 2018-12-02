@@ -22,6 +22,7 @@ class PostFactory: NSObject {
     static func randomPost() -> Post {
         let post = Post()
         post.picture = PostFactory.randomImage()
+        post.thumbnail = PostFactory.thumbnail(image: post.picture)
         post.caption = PostFactory.randomCaption()
         post.owner = PostFactory.randomUser()
         post.comments = PostFactory.randomComments(4)
@@ -39,7 +40,7 @@ class PostFactory: NSObject {
         let longitude = CLLocationDegrees(exactly: -121.9323874) ?? CLLocationDegrees()
         let place = Place()
         place.name = Lorem.word
-        place.location = CLLocation(latitude: latitude, longitude: longitude)
+        place.location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         return place
     }
 
@@ -50,7 +51,6 @@ class PostFactory: NSObject {
             return #imageLiteral(resourceName: "Pinspot")
         }
         return image
-//        return #imageLiteral(resourceName: "Pinspot")
     }
 
     static func randomCaption() -> String {
@@ -86,4 +86,28 @@ class PostFactory: NSObject {
         return Array(repeating: PostFactory.randomUser(), count: total)
     }
 
+    // MARK :- helpers
+
+    static func thumbnail(image: UIImage?) -> UIImage? {
+        guard let image = image else {
+            return nil
+        }
+        let imageData = image.pngData()
+        let options = [
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceThumbnailMaxPixelSize: 50] as CFDictionary
+        let tempData: NSMutableData = NSMutableData()
+        imageData?.withUnsafeBytes {
+            tempData.replaceBytes(in: NSMakeRange(0, imageData?.count ?? 0), withBytes: $0)
+        }
+        let unsafePointer: UnsafePointer? = tempData.bytes.assumingMemoryBound(to: UInt8.self)
+        if let cfImageData = CFDataCreate(kCFAllocatorDefault, unsafePointer, imageData?.count ?? 0),
+            let source = CGImageSourceCreateWithData(cfImageData, nil),
+            let imageReference = CGImageSourceCreateThumbnailAtIndex(source, 0, options) {
+            let thumbnail = UIImage(cgImage: imageReference)
+            return thumbnail
+        }
+        return nil
+    }
 }

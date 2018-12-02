@@ -13,6 +13,7 @@ class ExploreViewController: UIViewController {
 
     var posts: [Post]? {
         didSet {
+            self.mapView.posts = self.posts
             self.gridView.posts = self.posts
         }
     }
@@ -39,6 +40,7 @@ class ExploreViewController: UIViewController {
 
         self.view.addSubview(self.mapView)
         self.mapView.pinToEdgesOfSuperview()
+        self.mapView.delegate = self
 
         self.view.addSubview(self.segmentedControl)
         self.segmentedControl.pinToBottomEdgeOfSuperview(withOffset: Style.Size.padding)
