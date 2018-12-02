@@ -13,13 +13,18 @@ class PostView: View {
     var post: Post? {
         didSet {
             self.picture.image = self.post?.picture
-            self.caption.text = self.post?.caption
+
+            if let username = self.post?.owner?.userName,
+                let text = self.post?.caption {
+                let attributedText = AttributedString.prefixString(prefix: username, value: text)
+                self.caption.attributedText = attributedText
+            }
         }
     }
 
     var picture: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
 
@@ -30,6 +35,8 @@ class PostView: View {
     }()
 
     override func setup() {
+        self.clipsToBounds = true
+
         self.addSubview(self.picture)
         self.picture.pinToTopEdgeOfSafeArea()
         self.picture.pinToSideEdgesOfSuperview()

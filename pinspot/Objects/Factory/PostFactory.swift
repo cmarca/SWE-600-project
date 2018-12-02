@@ -21,12 +21,12 @@ class PostFactory: NSObject {
 
     static func randomPost() -> Post {
         let post = Post()
-        post.picture = self.randomImage()
+        post.picture = PostFactory.randomImage()
         post.caption = PostFactory.randomCaption()
-        post.owner = self.randomUser()
-        post.comments = self.randomComments(4)
+        post.owner = PostFactory.randomUser()
+        post.comments = PostFactory.randomComments(4)
         post.date = Date()
-        post.place = self.randomPlace()
+        post.place = PostFactory.randomPlace()
         post.isPublic = true
         post.likes = PostFactory.randomUsers(2)
         return post
@@ -61,7 +61,7 @@ class PostFactory: NSObject {
         let user = User()
         user.realName = Lorem.fullName
         user.userName = Lorem.lastName
-        return User()
+        return user
     }
 
     static func randomComment() -> Comment {
