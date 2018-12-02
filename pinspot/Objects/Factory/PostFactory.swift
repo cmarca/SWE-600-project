@@ -34,13 +34,22 @@ class PostFactory: NSObject {
     }
 
     // MARK :- singles
+    static func randomLocation() -> CLLocationCoordinate2D {
+        let latitudeOffset = Double.random(in: -0.1...0.1)
+        let latitudeDouble = 37.3885491 + latitudeOffset
+
+        let longitudeOffset = Double.random(in: -0.1...0.1)
+        let longitudeDouble = -121.9323874 + longitudeOffset
+
+        let latitude = CLLocationDegrees(exactly: latitudeDouble) ?? CLLocationDegrees()
+        let longitude = CLLocationDegrees(exactly: longitudeDouble) ?? CLLocationDegrees()
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
 
     static func randomPlace() -> Place {
-        let latitude = CLLocationDegrees(exactly: 37.3885491) ?? CLLocationDegrees()
-        let longitude = CLLocationDegrees(exactly: -121.9323874) ?? CLLocationDegrees()
-        let place = Place()
+         let place = Place()
         place.name = Lorem.word
-        place.location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        place.location = PostFactory.randomLocation()
         return place
     }
 
