@@ -15,6 +15,11 @@
 - An encrypted connection shall be used
 - The app shall be intuitive and convenient to use
 
+# Run Instructions
+In order to run this project you need macOS 10.14 or newer and Xcode 10 or newer.
+Clone or Download this repo and open `pinspot.xcworkspace` file in Xcode.
+Select `Run` and the project will run in iPhone simulator.
+
 # Authors
 - Carlos Felipe Marcano Rojas (92655)
 - Nadezda Brusova (94459)
